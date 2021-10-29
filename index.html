@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>VidanMebel</title>
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li class = "navbar__item"><a href = "#home"><img src = "images/Vidan_logo.png"></a>
+            <li class = "navbar__item"><a href = "#about">Про нас</a></li>
+            <li class = "navbar__item"><a href = "#service">Как мы работаем</a></li>
+            <li class = "navbar__item"><a href = "#team">Команда</a></li>
+            <li class = "navbar__item"><a href = "#work">Работы</a></li>
+            <li class = "navbar__item"><button>Заказать</button></li>
+            <li class = "navbar__background"></li>
+        </ul>
+    </header>
+    <div id = "home" class = "container">
+        <div class = "logo">
+            <img class = "logo__img" src = "images/Vidan_logo.png">
+        </div>
+        <div class = "call_to_action">
+            <p>Заполни форму за 30 секунд и получи полную консультацию по своему вопросу</p>
+            <div class = "call_to_action__buttons">
+                <button>заказать</button>
+                <button>узнать больше</button>
+            </div>
+            <div class = "call_to_action__social">
+                <a href = "https://www.instagram.com/vidanmebel/"><img src = "images/instagram-icon.png"></a>
+                <a href = ""><img src = "images/twitter-icon.png"></a>
+                <a href = "https://www.facebook.com/groups/vidanmebel/"><img src = "images/facebook-icon.png"></a>
+            </div>
+        </div>
+    </div>
+    <div id = "about" class = "about_us_block">
+        <h1>Почему выбирают нас</h1>
+        <ul class = "about_us__list">
+            <li class="about_us__list__items">
+                <div class = "counter">
+                    <div data-num="10" class="number">0</div>
+                    <svg>
+                        <circle r="50%" cx="50%" cy="50%"></circle>
+                    </svg>
+                </div>
+                <p class = "text">лет опыта в сфере мебели</p>
+            </li>
+            <li class="about_us__list__items">
+                <div class = "counter">
+                    <div data-num="2390" class="number f-s54">0</div>
+                    <svg>
+                        <circle r="50%" cx="50%" cy="50%"></circle>
+                    </svg>
+                </div>
+                <p class = "text">шкафов спроектировано и успешно установлено</p>
+            </li>
+            <li class="about_us__list__items">
+                <div class = "counter">
+                    <div data-num="277" class="number f-s64">0</div>
+                    <svg>
+                        <circle r="50%" cx="50%" cy="50%"></circle>
+                    </svg>
+                </div>
+                <p class = "text">клиентов в 2021 году</p>
+            </li>
+            <li class="about_us__list__items">
+                <div class = "counter">
+                    <div class = "counter__container">
+                        <div data-num="24" class="number">0</div>
+                        <span>/</span>
+                        <div data-num="7" class="number">0</div>
+                    </div>
+                    <svg>
+                        <circle r="50%" cx="50%" cy="50%"></circle>
+                    </svg>
+                </div>
+                <p class = "text">круглосуточная поддержка</p>
+            </li>
+            <li class="about_us__list__items">
+                <div class = "counter">
+                    <div data-num="12" class="number">0</div>
+                    <svg>
+                        <circle r="50%" cx="50%" cy="50%"></circle>
+                    </svg>
+                </div>
+                <p class = "text">месяцев гарантии</p>
+            </li>
+        </ul>
+    </div>
+    <div id = "service" class = "service_block">
+        <div class="service_block__container">
+            <h1>Как мы работаем</h1>
+            <ul class="service_block__list">
+                <li class = "list_item">
+                    <div class = "list_item__content">
+                        <img src = "images/calling.png">
+                        <p class = "flex-end">Клиент выходит с нами на связь, через сайт или по телефону</p>
+                    </div>
+                    <span></span>
+                </li>
+                <li class = "list_item reverse">
+                    <div class = "list_item__content reverse">
+                        <img src = "images/calculating.png">
+                        <p>Наша команда определяет задачи и объем работ, составляет предварительный расчет стоимости</p>
+                    </div>
+                    <span class = "way_reverse"></span>
+                </li>
+                <li class = "list_item">
+                    <div class = "list_item__content">
+                        <img src = "images/tape_measure.png">
+                        <p>Наша команда специалистов выезжает на замер, и просчитывает окончательную стоимость услуги</p>
+                    </div>
+                    <span></span>
+                </li>
+                <li class = "list_item reverse">
+                    <div class = "list_item__content reverse">
+                        <img src = "images/contract.png">
+                        <p>Заключаем договор с клиентом, и указываем сумму предплаты</p>
+                    </div>
+                    <span class = "way_reverse"></span>
+                </li>
+                <li class = "list_item">
+                    <div class = "list_item__content">
+                        <img src = "images/work.png">
+                        <p>Изготовление и монтаж</p>
+                    </div>
+                    <span></span>
+                </li>
+                <li class = "list_item reverse">
+                    <div class = "list_item__content reverse">
+                        <img src = "images/end-point.png">
+                        <p>Приём работ, окончательная оплата</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id = "team" class="team">
+        <h1 class = "team__header">Наша команда</h1>
+        <ul class = "team__list">
+            <li class = "team__list__item">
+                <div class = "team__list__item__note"><p>Богдан Брилицкий</p></div>
+                <div class = "team__list__item__content">
+                    <img class = "team__list__item__img" src = "images/Bogdan.jpg">
+                    <p>Руководитель и идейный вдохновитель компании Видан Мебель.</p>
+                </div>
+            </li>
+            <li class = "team__list__item">
+                <div class = "team__list__item__note second"><p>Илона</p></div>
+                    <div class = "team__list__item__content">
+                    <img class = "team__list__item__img" src = "images/Ilona.png">
+                    <p>HR-менеджер.</p>
+            </div>
+            </li>
+            <li class = "team__list__item">
+                <div class = "team__list__item__note third"><p>Оксана</p></div>
+                <div class = "team__list__item__content">
+                    <img class = "team__list__item__img" src = "images/Oksana.png">
+                    <p>Старший менеджер по продажам.</p>
+            </div>
+            </li>
+        </ul>
+    </div>
+    <div class = "our_work">
+        <h1 id = "work" class = "our_work__header">Наши рaботы</h1>
+        <div class="our_work_container">
+            <div class="slides">
+                <div class="slides__content">
+                    <h3>Белая кухня</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis fuga voluptate, dolore, porro quidem dolores sapiente praesentium velit minima, quisquam amet deleniti in architecto. Cupiditate id neque consequuntur enim?</p>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="slides__content">
+                    <h3>Белая кухня</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis fuga voluptate, dolore, porro quidem dolores sapiente praesentium velit minima, quisquam amet deleniti in architecto. Cupiditate id neque consequuntur enim?</p>
+                </div>
+            </div>
+            <div class="slides active">
+                <div class="slides__content">
+                    <h3>Белая кухня</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis fuga voluptate, dolore, porro quidem dolores sapiente praesentium velit minima, quisquam amet deleniti in architecto. Cupiditate id neque consequuntur enim?</p>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="slides__content">
+                    <h3>Белая кухня</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis fuga voluptate, dolore, porro quidem dolores sapiente praesentium velit minima, quisquam amet deleniti in architecto. Cupiditate id neque consequuntur enim?</p>
+                </div>
+            </div>  
+            <div class="slides">
+                <div class="slides__content">
+                    <h3>Белая кухня</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis fuga voluptate, dolore, porro quidem dolores sapiente praesentium velit minima, quisquam amet deleniti in architecto. Cupiditate id neque consequuntur enim?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "contacts_block">
+        <h1 class = "contacts__header">Контакты</h1>
+        <div class="contacts">
+        <div class="contacts__item">
+            <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.7340676342014!2d30.502518015732576!3d50.48329427947987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfe9195dc349%3A0x65c203a9857b6356!2z0JLQuNC00LDQvSDQnNC10LHQtdC70Yw!5e0!3m2!1suk!2sua!4v1635498587084!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contacts__item">
+            <h3>Как нас найти</h3>
+            <div class = "contacts__data">
+                <img class = "icon" src = "images/phone.png">
+                <p>+38 (000)-000-00-00</p>
+                <img class = "icon" src = "images/email.png">
+                <p>vidanmebel@gmail.com</p>
+            </div>
+            <div class="contacts__social">
+                <h3>Мы в соц. сетях</h3>
+                <div class="social__icons">
+                    <a href = "https://www.instagram.com/vidanmebel/"><img src = "images/instagram-icon__white.png"></a>
+                    <a href = ""><img src = "images/twitter-icon__white.png"></a>
+                    <a href = "https://www.facebook.com/groups/vidanmebel/"><img src = "images/facebook-icon__white.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <h3>© 2021 Vidan Mebel. All Rights Reserved.</h3>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
