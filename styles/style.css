@@ -220,7 +220,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
 }
 
 .about_us_block::before{
@@ -248,21 +248,24 @@ body{
 
 .about_us__list {
     list-style: none;
-    width: 90%;
+    width: 96%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
+    padding: 20px;
+    background:rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 0.25);
 }
 .about_us__list__items {
-    width: 22%;
-    margin: 60px;
+    margin: 15px;
     background: #fff;
     box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 20px;
+    flex: 1;
 }
 
 .counter{
@@ -286,7 +289,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 88px;
+    font-size: 68px;
     transform: translate(-50%, -50%);
     font-family: "Roboto Regular";
     color: rgba(26, 63, 87, 0.65);
@@ -296,7 +299,7 @@ body{
 
 .counter__container .number{
     position: static;
-    font-size: 54px;
+    font-size: 44px;
     transform: none;
 }
 
@@ -304,12 +307,12 @@ body{
     opacity: 1;
 }
 
-.number.f-s54{
-    font-size: 54px;
+.number.f-s44{
+    font-size: 44px;
 }
 
-.number.f-s64{
-    font-size: 64px;
+.number.f-s54{
+    font-size: 54px;
 }
 
 .counter__container{
@@ -321,7 +324,7 @@ body{
 }
 
 .counter__container span{
-    font-size: 54px;
+    font-size: 44px;
     font-family: "Roboto Regular";
     color: rgba(26, 63, 87, 0.65);
     opacity: 0;
@@ -360,10 +363,11 @@ body{
 .text{
     color: rgba(26, 63, 87, 0.65);
     font-family: "Roboto Regular";
-    font-size: 22px;
+    font-size: 18px;
     width: 90%;
     text-align: center;
-    margin: 60px 0;
+    margin: 30px 0;
+    height: 40px;
 }
 
   @keyframes countdown {
@@ -407,7 +411,7 @@ body{
 }
 
 .service_block__container{
-    width: 80%;
+    width: 70%;
     z-index: 2;
     margin-top: 6%;
 }
@@ -438,7 +442,7 @@ body{
     width: 90%;
     display: flex;
     align-items: center;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 .list_item__content.reverse{
@@ -448,12 +452,16 @@ body{
 .list_item img{
     width: 12%;
 }
+
+.list_item:last-child img{
+    transform: translateX(-5px);
+}
 .list_item p{
     color: rgb(173, 156, 126);
-    font-size: 36px;
+    font-size: 30px;
     font-family: "Gilroy ExtraBold";
     max-width: 60%;
-    margin: 0 70px 0 70px;
+    margin: 0 50px 0 50px;
 }
 
 .list_item span{
@@ -468,7 +476,7 @@ body{
 .list_item span::after{
     content: "";
     position: absolute;
-    height: 45px;
+    height: 30px;
     width: 2px;
     background-color: rgb(173, 156, 126);
     bottom: 0;
@@ -478,7 +486,7 @@ body{
 .list_item span::before{
     content: "";
     position: absolute;
-    height: 45px;
+    height: 30px;
     width: 2px;
     background-color: rgb(173, 156, 126);
     top: 0;
@@ -674,9 +682,19 @@ body{
     opacity: 0;
     width: 60%;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
     padding: 20px;
+    overflow: hidden;
+  }
+
+  .slides__content div{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      backdrop-filter: blur(3px);
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
   }
   
   .slides.active .slides__content{
@@ -709,10 +727,12 @@ body{
     font-family: 'Gilroy ExtraBold';
     font-size: 24px;
     margin: 0;
+    position: relative;
 }
 .slides__content p{
     font-family: 'Gilroy Light';
     font-size: 18px;
+    position: relative;
 }
 
 .contacts_block{
