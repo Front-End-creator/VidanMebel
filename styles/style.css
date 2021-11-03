@@ -238,7 +238,7 @@ body{
 
 
 .about_us_block h1{
-    font-size: 88px;
+    font-size: 72px;
     margin: 0;
     font-family: "Gilroy ExtraBold";
     color: #fff;
@@ -417,7 +417,7 @@ body{
 }
 
 .service_block__container h1{
-    font-size: 80px;
+    font-size: 72px;
     text-align: center;
     font-family: "Gilroy ExtraBold";
     margin: 0;
@@ -522,7 +522,7 @@ body{
 }
 
 .team__header{
-    font-size: 88px;
+    font-size: 72px;
     margin: 0;
     font-family: "Gilroy ExtraBold";
     color: #fff;
@@ -644,7 +644,7 @@ body{
 }
 
 .our_work__header{
-    font-size: 80px;
+    font-size: 72px;
     text-align: center;
     font-family: "Gilroy ExtraBold";
     margin: 0;
@@ -658,11 +658,12 @@ body{
     border-radius: 20px;
     height: 90vh;
     flex-grow: 1;
+    width: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    transition: flex-grow 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
     cursor: pointer;
   }
   
@@ -671,7 +672,7 @@ body{
   }
   
   .slides.active{
-    flex-grow: 10;
+    width: 60%;
   }
   
   .slides .slides__content{
@@ -758,7 +759,7 @@ body{
 }
 
 .contacts__header{
-    font-size: 88px;
+    font-size: 72px;
     margin: 0;
     font-family: "Gilroy ExtraBold";
     color: #fff;
