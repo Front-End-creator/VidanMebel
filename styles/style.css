@@ -23,9 +23,6 @@ body{
     margin: 0;
 }
 
-h1{
-    letter-spacing: 0.15rem;
-}
 
 .navbar{
     display: flex;
@@ -989,11 +986,11 @@ footer h3{
     }
 
     .team{
-        margin-top: -10%;
+        margin-top: -12%;
     }
 
     .team__header{
-        font-size: 54px;
+        font-size: 48px;
         padding-top: 10%;
         width: 70%;
         margin: auto;
