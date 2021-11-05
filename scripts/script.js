@@ -18,7 +18,7 @@ $(window).scroll(function() {
     if (cPos < topWindow + 500) {
       if (cc < 2) {
         $(".number").addClass("visible");
-        $(".about_us__list__items svg circle").addClass("active");
+        $(".about_us__list__items svg circle").addClass("animate");
         $(".counter__container span").addClass("visible");
         $('.about_us__list__items div').each(function() {
           let
