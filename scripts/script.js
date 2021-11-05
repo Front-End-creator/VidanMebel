@@ -19,6 +19,7 @@ $(window).scroll(function() {
       if (cc < 2) {
         $(".number").addClass("visible");
         $(".about_us__list__items svg circle").addClass("animate");
+        $(".about_us__list__items svg circle").css("stroke-dasharray", "0");
         $(".counter__container span").addClass("visible");
         $('.about_us__list__items div').each(function() {
           let

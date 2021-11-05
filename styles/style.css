@@ -346,7 +346,7 @@ body{
 }
 
 .about_us__list__items svg circle{
-    stroke-dasharray: 0;
+    stroke-dasharray: 0, 440;
     stroke-dashoffset: 0;
     stroke-width: 10px;
     stroke: rgb(64, 173, 255);
