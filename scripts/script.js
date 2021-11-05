@@ -9,7 +9,7 @@ $(window).scroll(function(){
 }
 });
 
-let time = 1000, cc = 1;
+let time = 2000, cc = 1;
 $(window).scroll(function() {
   $('.about_us__list__items').each(function() {
     let
