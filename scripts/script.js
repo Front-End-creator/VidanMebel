@@ -48,11 +48,15 @@ $(window).scroll(function() {
 
 
 $(document).ready(function(){
-  $(".navbar__item").on("click","a", function (event) {
+  $(".navbar__item, .mobileMenu_list").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
     top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 500);
+  });
+  $(".toggle").on("click", function (event) {
+    $(this).toggleClass('active');
+    $(".mobileMenu").toggleClass('active');
   });
 });
 
