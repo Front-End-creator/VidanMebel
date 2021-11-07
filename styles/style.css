@@ -349,7 +349,7 @@ body{
     stroke-dasharray: 0, 440;
     stroke-dashoffset: 0;
     stroke-width: 10px;
-    stroke: rgb(64, 173, 255);
+    stroke: #AD9C7E;
     fill: none;
 } 
 
@@ -883,7 +883,7 @@ footer h3{
         position: fixed;
         display: block;
         top: 20px;
-        left: 10px;
+        left: -64px;
         background: #1A2C38;
         z-index: 1000;
         padding: 10px 0 10px 5px;
@@ -895,6 +895,7 @@ footer h3{
     
     .mobileMenu.active{
         width: 270px;
+        left: 10px;
     }
     
     .toggle{
