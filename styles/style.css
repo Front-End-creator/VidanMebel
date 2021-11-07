@@ -349,7 +349,7 @@ body{
     stroke-dasharray: 0, 440;
     stroke-dashoffset: 0;
     stroke-width: 10px;
-    stroke: #AD9C7E;
+    stroke: rgba(64, 173, 255, 0.6);
     fill: none;
 } 
 
