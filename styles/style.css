@@ -24,6 +24,11 @@ body{
 }
 
 
+body.hidden{
+    overflow: hidden;
+}
+
+
 .navbar{
     display: flex;
     position: fixed;
@@ -53,13 +58,13 @@ body{
 }
 
 .navbar__item:nth-child(1){
-    margin-right: 35px;
+    margin: 0 35px 0 20px;
     margin-top: -100px;
     transition: all 0.5s ease-in;
 }
 
 .navbar__item:nth-child(1).show{
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .navbar__item img{
@@ -232,7 +237,7 @@ body{
     height: 100%;
     background-image: url("../images/shkaf-kupe-v-koridor-1.jpg");
     background-position: right;
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -2;
@@ -516,7 +521,7 @@ body{
     height: 100%;
     background-image: url("../images/white_furniture.jpg");
     background-position: right;
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
@@ -540,17 +545,17 @@ body{
     margin: auto;
     z-index: 5;
     position: relative;
+    flex-wrap: wrap;
 }
 .team__list__item{
-    margin: calc(25% / 6); 
-    flex: 1;
-    background: white;
+    margin: 30px; 
+    width: 20%;
     border-radius: 20px;
     position: relative;
     display: flex;
     justify-content: center;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-    padding-top: 100px;
+    padding-top: 80px;
     background: rgba(255, 255, 255, 0.2);
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     border-left: 2px solid rgba(255, 255, 255, 0.5);
@@ -613,15 +618,15 @@ body{
 }
 
 .team__list__item__img{
-    width: 16vw;
-    height: 16vw;
+    width: 80%;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     user-select: none;
 }
 
 .team__list__item__content p{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Gilroy ExtraBold';
     color: white;
     text-align: center;
@@ -876,6 +881,34 @@ footer h3{
     display: none;
 }
 
+.backlayer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 150;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+
+.leadblock{
+    position: absolute;
+    width: 92vw;
+    margin: auto;
+    top: 5vh;
+    left: 4vw;
+    background-color: white;
+    z-index: 30;
+    height: 90vh;
+}
+
+.helperlayer{
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 640px){
 
 
@@ -885,7 +918,7 @@ footer h3{
         top: 20px;
         left: -64px;
         background: #1A2C38;
-        z-index: 1000;
+        z-index: 120;
         padding: 10px 0 10px 5px;
         border-radius: 15px;
         width: 54px;
@@ -900,16 +933,16 @@ footer h3{
     
     .toggle{
         position: fixed;
-        top: 20px;
-        right: 10px;
+        top: 15px;
+        right: 15px;
         width: 50px;
         height: 50px;
         background: #1A2C38;
-        z-index: 1000;
+        z-index: 120;
         cursor: pointer;
         border-radius: 15px;
         display: block;
-        overflow: hidden;
+        box-shadow: 0 0 5px 4px rgba(173, 156, 126, 0.3);
     }
     
     .toggle ion-icon{
@@ -981,11 +1014,12 @@ footer h3{
     }
 
     .logo{
-        max-height: 200px;
+        max-height: 80px;
     }
 
     .logo__img{
-        width: 60%;
+        height: 60px;
+        width: auto;
     }
 
     .call_to_action p{
@@ -1012,8 +1046,6 @@ footer h3{
 
     .about_us_block::before{
         background-image: url('https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3VwYm9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60');
-        background-attachment: scroll;
-        background-position: top -200px center;
     }
 
     .about_us_block h1{
@@ -1097,7 +1129,6 @@ footer h3{
 
     .team::before{
         background-image: url('https://images.unsplash.com/photo-1595515106864-077d30192c56?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y3VwYm9hcmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60');
-        background-attachment: scroll;
     }
 
     .team__header{
@@ -1109,11 +1140,46 @@ footer h3{
 
     .team__list{
         flex-direction: column;
+        width: 70%;
+    }
+
+    .team__list__item{
+        flex: 1;
+        width: auto;
+        margin: 15px 0;
     }
 
     .team__list__item__img{
-        width: 60vw;
-        height: 60vw;
+        width: 80%;
+        height: auto;
+    }
+
+    .team__list__item__content p{
+        font-size: 14px;
+    }
+
+    .team__list__item__note p{
+        font-size: 16px;
+    }
+
+    .team__list__item__note{
+        height: 40px;
+        left: -20px;
+    }
+
+    .team__list__item__note::before{
+        height: 25px;
+    }
+
+    .team__list__item__note::before{
+        height: 25px;
+        width: 18px;
+    }
+
+    .team__list__item:nth-child(6),
+    .team__list__item:nth-child(7),
+    .team__list__item:nth-child(8){
+        display: none;
     }
 
     .our_work{

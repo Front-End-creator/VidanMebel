@@ -54,10 +54,18 @@ $(document).ready(function(){
     top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 500);
   });
-  $(".toggle").on("click", function (event) {
-    $(this).toggleClass('active');
-    $(".mobileMenu").toggleClass('active');
+  $(".toggle, .mobileMenu_list a").on("click", function (event) {
+    $('.toggle').toggleClass('active');
+    $('.mobileMenu').toggleClass('active');
   });
+  $(".lead").on("click", function () {
+    $('.backlayer').fadeIn();
+    $('body').addClass('hidden');
+  });
+  $(".helperlayer").on("click", function () {
+    $('.backlayer').fadeOut();
+    $('body').removeClass('hidden');
+});
 });
 
 const slides = document.querySelectorAll('.slides');
