@@ -649,6 +649,7 @@ body.hidden{
 }
 
 .team__list__item__content p{
+    margin: 30px 0;
     font-size: 16px;
     font-family: 'Gilroy ExtraBold';
     color: white;
@@ -838,6 +839,10 @@ body.hidden{
     margin: 0 0 20px 0;
     text-shadow: 0 4px 4px rgb(0 0 0 / 50%);
     font-family: 'Gilroy ExtraBold';
+}
+
+.contacts__data p:nth-child(3), .contacts__data p:nth-child(4){
+    margin-left: 55px;
 }
 
 
