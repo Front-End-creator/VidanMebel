@@ -23,6 +23,16 @@ body{
     margin: 0;
 }
 
+.fixed_background{
+    background-image: url('../images/shkaf-kupe-v-koridor-1.png');
+    background-size: 100vw 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1000;
+}
 
 body.hidden{
     overflow: hidden;
@@ -155,7 +165,7 @@ body.hidden{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/furniture_firstblock.jpg");
+    background-image: url("../images/furniture_firstblock.png");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -191,7 +201,7 @@ body.hidden{
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);;
 }
 
-.call_to_action__buttons button:nth-child(2){
+.call_to_action__buttons a button{
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.25);
     background: #AD9C7E;
     color: #fff;
@@ -230,18 +240,18 @@ body.hidden{
     padding-bottom: 180px;
 }
 
-.about_us_block::before{
+/* .about_us_block::before{
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/shkaf-kupe-v-koridor-1.jpg");
+    background-image: url("../images/shkaf-kupe-v-koridor-1.png");
     background-position: right;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -2;
-}
+} */
 
 
 .about_us_block h1{
@@ -401,7 +411,7 @@ body.hidden{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/dizainerskii-shkaf.jpg");
+    background-image: url("../images/dizainerskii-shkaf.png");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -514,18 +524,18 @@ body.hidden{
     position: relative;
 }
 
-.team::before{
+/* .team::before{
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/white_furniture.jpg");
+    background-image: url("../images/white_furniture.png");
     background-position: right;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
-}
+} */
 
 .team__header{
     font-size: 72px;
@@ -758,7 +768,7 @@ body.hidden{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/kupe.jpg");
+    background-image: url("../images/kupe.png");
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
@@ -881,7 +891,7 @@ footer h3{
     display: none;
 }
 
-.backlayer{
+.backlayer, .consultation_backlayer{
     position: fixed;
     top: 0;
     right: 0;
@@ -908,6 +918,281 @@ footer h3{
     width: 100%;
     height: 100%;
 }
+
+.consultationblock{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #1A2C38;
+    border-radius: 20px;
+    box-shadow: 0 0 80px 50px rgba(173, 156, 126, 0.5);
+    border-top: solid #AD9C7E 2px;
+    border-left: solid #AD9C7E 2px;
+    min-width: 450px;
+    transform: translate(-50%, -50%);
+}
+
+.consultationblock__icon{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #1A2C38;
+    border: solid #AD9C7E 2px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.consultationblock__icon ion-icon{
+    color: #AD9C7E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%, -50%);
+}
+
+.consultationblock__form{
+    width: 80%;
+    height: 80%;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+
+.consultationblock__form label{
+    font-family: 'Gilroy ExtraBold';
+    color: #AD9C7E;
+    font-size: 24px;
+}
+
+.consultation_access{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 150;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+
+
+.consultation_access .access_conteiner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1A2C38;
+    border-radius: 20px;
+    box-shadow: 0 0 80px 50px rgba(173, 156, 126, 0.5);
+    border-top: solid #AD9C7E 2px;
+    border-left: solid #AD9C7E 2px;
+    width: 25%;
+    z-index: 150;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+.access_text{
+    color: rgb(173, 156, 126);
+    font-family: 'Gilroy ExtraBold';
+    font-size: 28px;
+}
+
+.access_icon{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #1A2C38;
+    border: solid #AD9C7E 2px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.access_icon ion-icon{
+    color: #AD9C7E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+}
+
+
+.forminput{
+    padding: 10px 10px;
+    width: 100%;
+    margin: 10px 0 25px 0;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    position: relative;
+    border-radius: 5px;
+    color: #AD9C7E;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
+
+.forminput._error{
+    box-shadow: 0 0 10px 5px tomato;
+}
+
+.form_alert{
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+
+.form_alert::before{
+    content: "";
+    position: absolute;
+    color: red;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-family: 'Gilroy Light';
+}
+
+.form_alert._error::before{
+    content: "*Заполните обьязательное поле";
+    animation: viz 0.5s forwards;
+}
+
+@keyframes viz {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.form_alert._error_phone::before{
+    content: "*Введены некоректные данные";
+    animation: viz 0.5s forwards;
+}
+
+.forminput::placeholder{
+    color: #AD9C7E;
+    font-family: 'Gilroy Light';
+}
+
+.forminput:focus{
+    box-shadow: 0 0 10px 5px #AD9C7E;
+}
+
+.consultationblock__form textarea{
+    height: 120px;
+    resize: none;
+    margin-bottom: 0;
+}
+
+
+.wave-btn {
+	width: 280px;
+	height: 60px;
+	display: flex;
+    border: none;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	justify-content:center;
+	align-items: center;
+	border-radius: 10px;
+	text-decoration: none;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+.wave-btn:hover {
+	border-radius: 10px;
+
+	transition: all 0.5s ease 0.2s;
+	-webkit-transition: all 0.5s ease 0.2s;
+	-moz-transition: all 0.5s ease 0.2s;
+	-ms-transition: all 0.5s ease 0.2s;
+	-o-transition: all 0.5s ease 0.2s;
+
+	-webkit-box-shadow: 0 0 40px rgba(173, 156, 126, 0.6);
+	box-shadow: 0 0 40px rgba(173, 156, 126, 0.6);
+
+}
+.wave-btn:hover .wave-btn__waves{
+	top: -50px;
+}
+
+.wave-btn__text {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	position: relative;
+	z-index: 1;
+}
+.wave-btn__waves {
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	background-color: #AD9C7E;
+	top: 0;
+	left: 0;
+	-webkit-box-shadow: inset 0 0 50px #1A2C38;
+	box-shadow: inset 0 0 50px #1A2C38;
+
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.wave-btn__waves:after,
+.wave-btn__waves:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 250%;
+	height: 250%;
+
+	transform: translate3d(-50%,-96%,0) rotate(0deg) scale(1);
+}
+
+.wave-btn__waves:before{
+	background-color: #1A2C38;
+	border-radius: 48%;
+
+	animation: waves 8s infinite linear;
+}
+.wave-btn__waves:after{
+	background-color: rgba(26, 44, 56, 0.5);
+	border-radius: 44%;
+
+	animation: waves 10s infinite linear;
+}
+
+@keyframes waves{
+	0%{
+		transform: translate3d(-50%,-96%,0) rotate(0deg) scale(1);
+	}
+	100%{
+		transform: translate3d(-50%,-96%,0) rotate(360deg) scale(1);
+
+	}
+}
+
 
 @media (max-width: 640px){
 
@@ -961,7 +1246,42 @@ footer h3{
     .toggle.active .close, .toggle .open{
         display: none;
     }
+
+
+    .consultationblock{
+        width: 90%;
+        top: 52%;
+        transform: translateY(-50%);
+        left: 5%;
+        box-shadow: 0 0 50px 20px rgba(173, 156, 126, 0.3);
+    }
     
+    .consultationblock__icon{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background: #1A2C38;
+        border: solid #AD9C7E 2px;
+        border-radius: 50%;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .consultationblock__icon ion-icon{
+        color: #AD9C7E;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 60px;
+        transform: translate(-50%, -50%);
+    }
+    
+
+    
+    .wave-btn {
+        margin: 30px 0;
+    }
     
     .mobileMenu ul{
         list-style: none;

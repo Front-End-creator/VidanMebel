@@ -48,7 +48,7 @@ $(window).scroll(function() {
 
 
 $(document).ready(function(){
-  $(".navbar__item, .mobileMenu_list").on("click","a", function (event) {
+  $(".navbar__item, .mobileMenu_list, .call_to_action__buttons").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
     top = $(id).offset().top;
@@ -62,10 +62,20 @@ $(document).ready(function(){
     $('.backlayer').fadeIn();
     $('body').addClass('hidden');
   });
+  $(".consultation_button").on("click", function () {
+    $('.consultation_backlayer').fadeIn();
+    $('body').addClass('hidden');
+  });
   $(".helperlayer").on("click", function () {
-    $('.backlayer').fadeOut();
+    $('.backlayer, .consultation_backlayer').fadeOut();
     $('body').removeClass('hidden');
 });
+let element = document.getElementById('tel');
+let maskOptions = {
+  mask: '+38(000)-000-00-00',
+  lazy: false
+} 
+let mask = new IMask(element, maskOptions);
 });
 
 const slides = document.querySelectorAll('.slides');
@@ -82,3 +92,82 @@ function removeActive(){
         slide.classList.remove('active');
     })
 }
+
+
+
+
+$(document).ready(function() {
+  const form = $('#form');
+  form.bind('submit', formSend);
+
+
+  async function formSend(e){
+      e.preventDefault();
+      let error = formValidate(form);
+
+      if(error === 0){
+        let name = $('#name').val();
+        let tel = $('#tel').val();
+        let message = $('#message').val();
+        if(message == ""){
+          message = "-";
+        }
+        const token = "2108676986:AAHpXF3U82xBQNfUBgNMXGHCOfYL98j-GqI";
+        const chatId = "-635947338";
+        let url = 'https://api.telegram.org/bot' + token +'/sendMessage?chat_id=' + chatId + '&text=';
+        let xhttp = new XMLHttpRequest();
+        $('.text-success').slideDown();
+        xhttp.open("GET", url + "Vidan, у вас новый клиент.%0AИмя : " + name + ",%0AТелефон : " + tel + ",%0AСообщение : " + message, true);
+        xhttp.send();
+        $('#name').val("");
+        $('#tel').val("");
+        $('#message').val("");
+        $('.consultation_backlayer').fadeOut();
+        $('.consultation_access').fadeIn();
+        $('.consultation_access').delay(1000).fadeOut();
+        $('body').removeClass('hidden');
+      }
+  }
+
+  function formValidate(form){
+      let error = 0;
+      let formReq = $('.req');
+      
+      for(let index = 0; index < formReq.length; index++){
+          const input = formReq[index];
+          RemoveError(input);
+
+          if($(input).hasClass('phone')){
+              if(PhoneNumberValidate(input)){
+                  AddSpecError(input);
+                  error++;
+              }
+          }
+            if($(input).val() === ''){
+                AddError(input);
+                error++;
+            }
+      }
+      return error;
+  }
+
+  function AddError(input){
+      $(input).addClass('_error');
+      $(input).parent().addClass('_error');
+  }
+
+  function AddSpecError(input){
+    $(input).parent().addClass('_error_phone');
+    $(input).addClass('_error');
+}
+
+  function RemoveError(input){
+      $(input).removeClass('_error _error_phone');
+      $(input).parent().removeClass('_error _error_phone');
+  }
+  
+
+  function PhoneNumberValidate(input){
+      return !/[+38]\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{2})\2([0-9]{2})/.test(input.value);
+  }
+});

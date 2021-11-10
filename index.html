@@ -9,6 +9,7 @@
     <title>VidanMebel</title>
 </head>
 <body>
+    <div class="fixed_background"></div>
     <header>
         <ul class="navbar">
             <li class = "navbar__item"><a href = "#home"><img src = "images/Vidan_logo_new.png"></a>
@@ -59,7 +60,7 @@
                 <li class = "mobileMenu_list">
                     <a href = "#">
                         <span class = "mob_icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                        <span class = "mob_menu_text">Консультация</span>
+                        <span class = "mob_menu_text consultation_button">Консультация</span>
                     </a>
                 </li>
             </ul>
@@ -71,6 +72,36 @@
         </div>
         <div class = "helperlayer"></div>
       </div>
+      <div class = "consultation_backlayer">
+        <div class = "consultationblock">
+            <div class = "consultationblock__icon">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+            <form id = "form" class = "consultationblock__form">
+                <div class = "form_alert">
+                    <label for="name">Ваше Имя:*</label><br>
+                    <input class = "forminput req" placeholder="Имя" id = "name">
+                </div>
+                <div class = "form_alert">
+                <label for="tel">Номер телефона:*</label><br>
+                <input class = "forminput phone req" placeholder="+38 (999) 999-99-99" type = "tel" id = "tel">
+                </div>
+                <label for="message">Ваше сообщение:</label><br>
+                <textarea class = "forminput" placeholder="Ваше сообщение" id = "message"></textarea>
+                <button type = "submit" class="wave-btn">
+                    <span class="wave-btn__text">отправить</span>
+                    <span class="wave-btn__waves"></span>
+                </button>
+            </form>
+        </div>
+    <div class = "helperlayer"></div>
+  </div>
+  <div class = "consultation_access">
+      <div class = "access_conteiner">
+        <div class = "access_icon"><ion-icon name="happy-outline"></ion-icon></div>
+        <div class = "access_text">Ваша заявка успешно отправлена!</div>
+        </div>
+    </div>
     <div id = "home" class = "container">
         <div class = "logo">
             <img class = "logo__img" src = "images/Vidan_logo_new.png">
@@ -79,7 +110,7 @@
             <p>Заполни форму за 30 секунд и получи полную консультацию по своему вопросу</p>
             <div class = "call_to_action__buttons">
                 <button class = "lead">заказать</button>
-                <button>узнать больше</button>
+                <a href = "#about"><button>узнать больше</button></a>
             </div>
             <div class = "call_to_action__social">
                 <a href = "https://www.instagram.com/vidanmebel/"><img src = "images/instagram-icon.png"></a>
@@ -197,35 +228,35 @@
                 <div class = "team__list__item__note"><p>Богдан Брилицкий</p></div>
                 <div class = "team__list__item__content">
                     <img class = "team__list__item__img" src = "images/Bogdan.png">
-                    <p>Руководитель и идейный вдохновитель компании Видан Мебель.</p>
+                    <p>Руководитель и идейный вдохновитель компании Видан Мебель</p>
                 </div>
             </li>
             <li class = "team__list__item">
                 <div class = "team__list__item__note second"><p>Илона</p></div>
                     <div class = "team__list__item__content">
                     <img class = "team__list__item__img" src = "images/Ilona.png">
-                    <p>HR-менеджер.</p>
+                    <p>HR-менеджер</p>
             </div>
             </li>
             <li class = "team__list__item">
                 <div class = "team__list__item__note third"><p>Оксана</p></div>
                 <div class = "team__list__item__content">
                     <img class = "team__list__item__img" src = "images/Oksana.png">
-                    <p>Старший менеджер по продажам.</p>
+                    <p>Старший менеджер по продажам</p>
             </div>
             </li>
             <li class = "team__list__item">
                 <div class = "team__list__item__note third"><p>Анна</p></div>
                 <div class = "team__list__item__content">
                     <img class = "team__list__item__img" src = "images/Anna.png">
-                    <p>Специалист по кухням.</p>
+                    <p>Специалист по кухням</p>
             </div>
             </li>
             <li class = "team__list__item">
-                <div class = "team__list__item__note third"><p>Анна</p></div>
+                <div class = "team__list__item__note third"><p>Наталья</p></div>
                 <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/Oksana.png">
-                    <p>Специалист по кухням.</p>
+                    <img class = "team__list__item__img" src = "images/natalia.png">
+                    <p>Менеджер по продажам</p>
             </div>
             </li>
             <li class = "team__list__item">
@@ -322,5 +353,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>
