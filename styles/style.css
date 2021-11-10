@@ -1281,7 +1281,13 @@ footer h3{
 
     
     .wave-btn {
+        width: 70vw;
         margin: 30px 0;
+    }
+
+    .wave-btn__waves{
+        width: 70vw;
+        height: 70vw;
     }
     
     .mobileMenu ul{
