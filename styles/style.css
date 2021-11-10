@@ -1249,8 +1249,9 @@ footer h3{
 
 
     .consultationblock{
-        width: 90%;
-        top: 52%;
+        min-width: 0;
+        width: 90vw;
+        top: 50%;
         transform: translateY(-50%);
         left: 5%;
         box-shadow: 0 0 50px 20px rgba(173, 156, 126, 0.3);
