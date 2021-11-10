@@ -153,11 +153,11 @@ body.hidden{
 .call_to_action {
     flex: 1;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.6);
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 2;
 }
 
 .call_to_action::before{
@@ -169,6 +169,15 @@ body.hidden{
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.call_to_action::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
 
@@ -283,6 +292,10 @@ body.hidden{
     flex-direction: column;
     padding-top: 20px;
     flex: 1;
+}
+
+.about_us__list__items:last-child{
+    display: none;
 }
 
 .counter{
@@ -714,6 +727,7 @@ body.hidden{
       right: 0;
       position: absolute;
       backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
       background-color: rgba(0, 0, 0, 0.3);
       border-radius: 15px;
   }
@@ -1212,7 +1226,7 @@ footer h3{
     }
     
     .mobileMenu.active{
-        width: 270px;
+        width: 65%;
         left: 10px;
     }
     
@@ -1313,7 +1327,7 @@ footer h3{
     .mobileMenu_list a{
         color: #AD9C7E;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 1.5em;
         font-family: 'Gilroy Light';
         display: block;
         padding: 10px;
@@ -1402,6 +1416,10 @@ footer h3{
     .service_block__container{
         margin-top: 50px;
         width: 90%
+    }
+
+    .our_work__header, .service_block__container h1{
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
     }
 
     .service_block__container h1{
@@ -1598,4 +1616,56 @@ footer h3{
     .social__icons{
         margin-bottom: 20px;
     }
+}
+
+
+@media  (max-width: 375px){ 
+    
+    .mobileMenu_list a{
+        font-size: 18px;
+    }
+
+    .consultationblock{
+        bottom: 0;
+        top: auto;
+        transform: none;
+    }
+    .consultationblock__form label{
+        font-size: 20px;
+    }
+
+    .forminput{
+        padding: 5px;
+    }
+
+    .consultationblock__form textarea{
+        height: 80px;
+    }
+    .consultationblock__icon{
+        width: 80px;
+        height: 80px;
+        top: -40px;
+    }
+
+    .consultationblock__icon ion-icon{
+        font-size: 50px;
+    }
+
+    .consultationblock__form{
+        margin-top: 50px;
+    }
+
+    .slides .slides__content{
+        padding: 10px;
+    }
+
+    .slides__content p{
+        margin-bottom: 0;
+    }
+
+    .contacts__item p{
+        font-size: 1.2em;
+    }
+
+    
 }
