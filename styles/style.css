@@ -1568,16 +1568,21 @@ footer h3{
     }
 
     .slides__content h3{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .slides__content p{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .contacts_block {
-        background: rgb(173, 156, 126);
+        background: rgb(173, 156, 126, 0.9);
     }
+
+    .contacts_block::after{
+        content: none;
+    }
+
 
     .contacts__header{
         font-size: 56px;
@@ -1585,6 +1590,9 @@ footer h3{
         padding-top: 50px;
     }
     
+    .contacts__data p:nth-child(3), .contacts__data p:nth-child(4) {
+        margin-left: 43px;
+    }
 
     .contacts{
         flex-direction: column;
@@ -1661,6 +1669,12 @@ footer h3{
     .consultationblock__form{
         margin-top: 50px;
     }
+
+    .call_to_action__buttons button{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
 
     .slides .slides__content{
         padding: 10px;
