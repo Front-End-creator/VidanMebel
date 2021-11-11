@@ -1564,6 +1564,7 @@ footer h3{
         width: 90%;
         left: 5%;
         bottom: 5%;
+        padding: 10px;
     }
 
     .slides__content h3{
