@@ -728,7 +728,6 @@ body.hidden{
       right: 0;
       position: absolute;
       backdrop-filter: blur(3px);
-      -webkit-backdrop-filter: blur(3px);
       background-color: rgba(0, 0, 0, 0.3);
       border-radius: 15px;
   }
@@ -740,23 +739,23 @@ body.hidden{
   
   
   .slides:nth-child(1){
-    background-image: url("https://media.istockphoto.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?b=1&k=20&m=1297586166&s=170667a&w=0&h=Ka-3OYiTlbCiwCJhoXeTqRewh3DI4qfSh1B0baJMcCk=");
+    background-image: url("../images/wall_in_hall.png");
   }
   
   .slides:nth-child(2){
-    background-image: url("https://images.unsplash.com/photo-1603533880965-e1302f35290b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGN1cGJvYXJkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60");
+    background-image: url("../images/modern.png");
   }
   
 .slides:nth-child(3){
-    background-image: url("https://images.unsplash.com/photo-1620981210415-cfbd9c7e97ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGN1cGJvYXJkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60");
+    background-image: url("../images/industrial.png");
   }
   
 .slides:nth-child(4){
-    background-image: url("https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGN1cGJvYXJkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60");
+    background-image: url("../images/shkaf_kupe.png");
   }
   
 .slides:nth-child(5){
-    background-image: url("https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGN1cGJvYXJkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60");
+    background-image: url("../images/white_kitchen.png");
   }
   
 .slides__content h3{
