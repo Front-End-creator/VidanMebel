@@ -8,7 +8,6 @@ $(window).scroll(function(){
         $('.navbar__item:nth-child(1)').removeClass('show');
 }
 });
-
 let time = 2000, cc = 1;
 $(window).scroll(function() {
   $('.about_us__list__items').each(function() {
@@ -45,8 +44,6 @@ $(window).scroll(function() {
     }
   });
 });
-
-
 $(document).ready(function(){
   $(".navbar__item, .mobileMenu_list, .call_to_action__buttons").on("click","a", function (event) {
     event.preventDefault();
@@ -77,25 +74,18 @@ let maskOptions = {
 } 
 let mask = new IMask(element, maskOptions);
 });
-
 const slides = document.querySelectorAll('.slides');
-console.log(slides);
 for( const slide of slides){
     slide.addEventListener('click', () =>{
         removeActive();
         slide.classList.add('active');
     });
 }
-
 function removeActive(){
     slides.forEach((slide) =>{
         slide.classList.remove('active');
     })
 }
-
-
-
-
 $(document).ready(function() {
   const form = $('#form');
   form.bind('submit', formSend);
