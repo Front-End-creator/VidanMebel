@@ -24,7 +24,7 @@ body{
 }
 
 .fixed_background{
-    background-image: url('../images/shkaf-kupe-v-koridor-1.png');
+    background-image: url('../images/shkaf-kupe-v-koridor-1.webp');
     background-size: 100vw 100vh;
     position: fixed;
     left: 0;
@@ -165,7 +165,7 @@ body.hidden{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/furniture_firstblock.png");
+    background-image: url("../images/furniture_firstblock.webp");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,7 +254,7 @@ body.hidden{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/shkaf-kupe-v-koridor-1.png");
+    background-image: url("../images/shkaf-kupe-v-koridor-1.webp");
     background-position: right;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -424,7 +424,7 @@ body.hidden{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/dizainerskii-shkaf.png");
+    background-image: url("../images/dizainerskii-shkaf.webp");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -537,18 +537,6 @@ body.hidden{
     position: relative;
 }
 
-/* .team::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/white_furniture.png");
-    background-position: right;
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-} */
 
 .team__header{
     font-size: 72px;
@@ -739,23 +727,23 @@ body.hidden{
   
   
   .slides:nth-child(1){
-    background-image: url("../images/wall_in_hall.png");
+    background-image: url("../images/wall_in_hall.webp");
   }
   
   .slides:nth-child(2){
-    background-image: url("../images/modern.png");
+    background-image: url("../images/modern.webp");
   }
   
 .slides:nth-child(3){
-    background-image: url("../images/industrial.png");
+    background-image: url("../images/industrial.webp");
   }
   
 .slides:nth-child(4){
-    background-image: url("../images/shkaf_kupe.png");
+    background-image: url("../images/shkaf_kupe.webp");
   }
   
 .slides:nth-child(5){
-    background-image: url("../images/white_kitchen.png");
+    background-image: url("../images/white_kitchen.webp");
   }
   
 .slides__content h3{
@@ -782,7 +770,7 @@ body.hidden{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/kupe.png");
+    background-image: url("../images/kupe.webp");
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
