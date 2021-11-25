@@ -1518,12 +1518,6 @@ footer h3{
         width: 18px;
     }
 
-    .team__list__item:nth-child(6),
-    .team__list__item:nth-child(7),
-    .team__list__item:nth-child(8){
-        display: none;
-    }
-
     .our_work{
         clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
     }
