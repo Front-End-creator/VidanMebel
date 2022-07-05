@@ -17,9 +17,7 @@ $(window).scroll(function() {
     if (cPos < topWindow + 500) {
       if (cc < 2) {
         $(".number").addClass("visible");
-        $(".about_us__list__items svg circle").addClass("animate");
-        $(".about_us__list__items svg circle").css("stroke-dasharray", "0");
-        $(".counter__container span").addClass("visible");
+        $(".about_us__list__items span").addClass("visible");
         $('.about_us__list__items div').each(function() {
           let
             i = 0,
@@ -44,6 +42,7 @@ $(window).scroll(function() {
     }
   });
 });
+
 $(document).ready(function(){
   $(".navbar__item, .mobileMenu_list, .call_to_action__buttons").on("click","a", function (event) {
     event.preventDefault();
@@ -74,18 +73,22 @@ let maskOptions = {
 } 
 let mask = new IMask(element, maskOptions);
 });
-const slides = document.querySelectorAll('.slides');
+
+
+const slides = document.querySelectorAll('.our_work__items'),
+      zoom = document.querySelector('.zoom__container'),
+      zoom__img = document.querySelector('.zoom__img');
+  document.querySelector('.zoom__container__helplayer').addEventListener('click', () =>{
+  zoom.classList.remove('active');
+});
 for( const slide of slides){
     slide.addEventListener('click', () =>{
-        removeActive();
-        slide.classList.add('active');
+        zoom__img.setAttribute("src", slide.children[0].getAttribute("src"));
+        zoom.classList.add('active');
     });
 }
-function removeActive(){
-    slides.forEach((slide) =>{
-        slide.classList.remove('active');
-    })
-}
+
+
 $(document).ready(function() {
   const form = $('#form');
   form.bind('submit', formSend);
@@ -160,4 +163,105 @@ $(document).ready(function() {
   function PhoneNumberValidate(input){
       return !/[+38]\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{2})\2([0-9]{2})/.test(input.value);
   }
+});
+
+
+var arrLang = {
+  'ua': {
+      'menu__about': 'Про Нас',
+      'menu__service': 'Як ми працюємо',
+      'menu__work': 'Роботи',
+      'menu__consultation': 'Консультація',
+      'call_to_action__text': 'Заповни форму за 30 секунд та отримай повну консультацію з свого питання',
+      'butt__call': "Зворотній зв'язок",
+      'butt__ourwork': 'наші роботи',
+      'why_choose': 'Чому обирають нас',
+      'counter__age': 'років досвіду у сфері меблів',
+      'counter__cupboard': 'шаф спроектовано та успішно встановлено',
+      'counter__client': 'задоволених клієнтів у 2021 році',
+      'counter__help': 'цілодобова підтримка',
+      'counter__month': 'місяців гарантії',
+      'service__client': "Зацікавлений клієнт виходить з нами на зв'язок, через сайт або по телефону",
+      'service__calculate': 'Наша команда визначає задачі та обсяг робіт, складаємо попередній розрахунок вартості',
+      'service__team': 'Наш майстер виїжджає на заміри, затверджує технічний проект та прораховує остаточну вартість замовлення',
+      'service__treaty': 'Укладаємо офіційний двосторонній договір, в якому зазначаємо технічне завдання та умови співпраці',
+      'service__manufacturing': 'Виготовлення, доставка та монтаж',
+      'service__payment': 'Прийом робіт, остаточна оплата',
+      'team__supervisor': 'Керівник та ідейний натхненник компанії',
+      'team__constructor': 'Головний конструктор та проектувальник',
+      'team__topmanager': 'Старший менеджер з продажу',
+      'team__spec': 'Фахівець з кухень',
+      'team__manager': 'Менеджер з продажу',
+      'name__anna': 'Ганна',
+      'name__natalia': 'Наталя',
+      'name__kirill': 'Кирил',
+      'name__irina': 'Ірина',
+      'call_to_action__p': 'Пройди тест та дізнайся вартість меблів за одну хвилину!',
+      'call_to_action__butt__kitchen': 'Вартість кухні',
+      'call_to_action__butt__cupboard': 'Вартість шафи',
+      'contacts': 'Контакти',
+      'howfind': 'Як нас знайти',
+      'social': 'Ми в соц. мережах'
+  },
+  'ru': {
+      'menu__about': 'О нас',
+      'menu__service': 'Как мы работаем',
+      'menu__work': 'Работы',
+      'menu__consultation': 'Консультация',
+      'call_to_action__text': 'Заполни форму за 30 секунд и получи полную консультацию по своему вопросу',
+      'butt__call': "Обратная связь",
+      'butt__ourwork': 'наши работы',
+      'why_choose': 'Почему выбирают нас',
+      'counter__age': 'лет опыта в сфере мебели',
+      'counter__cupboard': 'шкафов спроектировано и успешно установлено',
+      'counter__client': 'довольных клиентов в 2021 году',
+      'counter__help': 'круглосуточная поддержка',
+      'counter__month': 'месяцев гарантии',
+      'service__client': "Клиент выходит с нами на связь, через сайт или по телефону",
+      'service__calculate': 'Наша команда определяет задачи и объем работ, составляет предварительный расчет стоимости',
+      'service__team': 'Наша команда специалистов выезжает на замер, и просчитывает окончательную стоимость услуги',
+      'service__treaty': 'Заключаем договор с клиентом, и указываем сумму предоплаты',
+      'service__manufacturing': 'Изготовление и монтаж',
+      'service__payment': 'Приём работ, окончательная оплата',
+      'team__supervisor': 'Руководитель и идейный вдохновитель компании',
+      'team__constructor': 'Конструктор-проектировщик',
+      'team__topmanager': 'Старший менеджер по продажам',
+      'team__spec': 'Специалист по кухням',
+      'team__manager': 'Менеджер по продажам',
+      'name__anna': 'Анна',
+      'name__natalia': 'Наталья',
+      'name__kirill': 'Кирилл',
+      'name__irina': 'Ирина',
+      'call_to_action__p': 'Пройди тест и узнай стоимость мебели за одну минуту!',
+      'call_to_action__butt__kitchen': 'Стоимость кухни',
+      'call_to_action__butt__cupboard': 'Стоимость шкафа',
+      'contacts': 'Контакты',
+      'howfind': 'Как нас найти',
+      'social': 'Мы в соц. сетях'
+  }
+};
+
+// var arrPlace = {
+//   'en':{
+//       'name': 'Name',
+//       'email': 'Email',
+//       'request': 'Request'
+//   },
+//   'ua':{
+//       'name': "Ім'я",
+//       'email': 'Електронна пошта',
+//       'request': 'Повідомлення'
+//   }
+// }
+
+$(function() {
+  $('.lang__button').click(function() {
+      var lang = $(this).attr('id');
+      $('.lang').each(function(index, element) {
+          $(this).text(arrLang[lang][$(this).attr('name')]);
+      });
+      // $('.placehold').each(function(index, element) {
+      //     $(this).attr('placeholder', arrPlace[lang][$(this).attr('name')]);
+      // });
+  });
 });

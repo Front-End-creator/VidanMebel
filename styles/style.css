@@ -26,16 +26,6 @@ body{
     margin: 0;
 }
 
-.fixed_background{
-    background-image: url('../images/shkaf-kupe-v-koridor-1.webp');
-    background-size: 100vw 100vh;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1000;
-}
 
 body.hidden{
     overflow: hidden;
@@ -124,12 +114,14 @@ body.hidden{
     font-size: 20px;
     border: solid 1px #AD9C7E;
     background: none;
-    padding: 5px 20px;
+    padding: 5px 10px;
     margin: 0;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+    margin-right: 20px;
 }
+
 
 .navbar__item button:hover{
     color: #fff;
@@ -193,16 +185,18 @@ body.hidden{
 
 .call_to_action__buttons{
     width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .call_to_action__buttons button{
-    font-size: 36px;
+    font-size: 32px;
+    text-transform: lowercase;
     font-family: "Gilroy Light";
     border: #ad9c7e solid 2px;
     background: none;
     color: #AD9C7E;
     padding: 8px 25px;
-    margin-right: 40px;
     box-shadow: 0 0 10px 5px rgba(173, 156, 126, 0.25);
     transition: all 0.3s ease-in-out;
 }
@@ -249,21 +243,9 @@ body.hidden{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 180px;
+    padding: 100px 0;
+    top: -120px;
 }
-
-/* .about_us_block::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/shkaf-kupe-v-koridor-1.webp");
-    background-position: right;
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -2;
-} */
 
 
 .about_us_block h1{
@@ -277,138 +259,68 @@ body.hidden{
 
 .about_us__list {
     list-style: none;
-    width: 96%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background:rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 0.25);
 }
 .about_us__list__items {
     margin: 15px;
-    background: #fff;
-    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-    padding-top: 20px;
-    flex: 1;
+    width: 400px;
+    position: relative;
+}
+
+.about_us__list__items img{
+    width: 90px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 .about_us__list__items:last-child{
     display: none;
 }
 
-.counter{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    position: relative;
-}
 
-.counter::after{
-    content: "";
-    position: absolute;
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
-    border-radius: 50%;
-    border: 10px solid rgb(210, 235, 255);
-    top: 0px;
-    left: 0px;
-}
 .number{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 68px;
-    transform: translate(-50%, -50%);
+    font-size: 90px;
     font-family: "Roboto Regular";
-    color: rgba(26, 63, 87, 0.65);
+    color: white;
     opacity: 0;
     transition: opacity 2s ease-in-out;
 }
 
-.counter__container .number{
-    position: static;
-    font-size: 44px;
-    transform: none;
-}
 
 .number.visible{
     opacity: 1;
 }
 
-.number.f-s44{
-    font-size: 44px;
-}
-
-.number.f-s54{
-    font-size: 54px;
-}
 
 .counter__container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
 }
 
-.counter__container span{
-    font-size: 44px;
+.about_us__list__items span{
+    font-size: 90px;
     font-family: "Roboto Regular";
-    color: rgba(26, 63, 87, 0.65);
+    color: white;
     opacity: 0;
     transition: opacity 2s ease-in-out;
 }
 
-.counter__container span.visible{
+.about_us__list__items span.visible{
     opacity: 1;
 }
-
-
-.about_us__list__items svg{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-}
-
-.about_us__list__items svg circle{
-    stroke-dasharray: 0, 440;
-    stroke-dashoffset: 0;
-    stroke-width: 10px;
-    stroke: rgba(64, 173, 255, 0.6);
-    fill: none;
-} 
-
-
-.about_us__list__items svg circle.animate{
-    animation: countdown 2s linear;
-  }
-  
-  
-  @keyframes countdown{
-    0%{
-        stroke-dasharray: 0, 440;
-    }
-    100%{
-      stroke-dasharray: 440, 0;
-    }
-  }
   
   
 
 .text{
-    color: rgba(26, 63, 87, 0.65);
+    color: white;
     font-family: "Roboto Regular";
-    font-size: 18px;
-    width: 90%;
-    text-align: center;
+    font-size: 30px;
     margin: 30px 0;
-    height: 40px;
+    margin: 0;
 }
 
   .service_block{
@@ -418,7 +330,7 @@ body.hidden{
     display: flex;
     justify-content: center;
     z-index: 2;
-    margin-top: -6%;
+    margin-top: -16%;
     padding-bottom: 5%;
 }
 
@@ -534,238 +446,236 @@ body.hidden{
 }
 
 .team {
-    background-color: rgb(173, 156, 126, 0.8);
+    background-color: rgba(173, 156, 126, 0.7);
     width: 100%;
     margin-top: -6%;
     position: relative;
+    padding-bottom: 30px;
 }
+
 
 
 .team__header{
     font-size: 72px;
+    text-transform: uppercase;
     margin: 0;
     font-family: "Gilroy ExtraBold";
-    color: #fff;
-    padding: 6% 0 0 0;
+    color: white;
+    padding: 8% 0 0 0;
     text-shadow: 0 4px 4px rgb(0 0 0 / 50%);
     text-align: center;
 }
 .team__list {
     list-style: none;
     padding: 0;
+    margin: auto;
+    margin-top: 30px;
     width: 90%;
     display: flex;
     justify-content: center;
-    margin: auto;
     z-index: 5;
     position: relative;
     flex-wrap: wrap;
 }
 .team__list__item{
-    margin: 30px; 
-    width: 20%;
-    border-radius: 20px;
+    width: 350px;
+    height: 400px;
     position: relative;
     display: flex;
-    justify-content: center;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-    padding-top: 80px;
-    background: rgba(255, 255, 255, 0.2);
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.team__list__item__note{
-    position: absolute;
-    width: 90%;
-    height: 50px;
-    left: -22px;
-    background: #fff;
-    top: 25px;
-    border-radius: 30px;
-    border-bottom-left-radius: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-.team__list__item__note p{
-    color: rgb(173, 156, 126);
-    font-family: 'Gilroy ExtraBold';
-    font-size: 20px;
-    padding-left: 15%;
-    text-shadow: 2px 2px 3px rgb(173 156 126 / 25%);
-}
-
-.team__list__item__note::after{
-    content: "";
-    position: absolute;
-    top: 100%;
-    background: rgb(200, 200, 200);
-    height: 30px;
-    width: 20px;
-    z-index: -1;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    left: 0;
-}
-
-.team__list__item__note::before{
-    content: "";
-    position: absolute;
-    top: 75%;
-    left: 0;
-    background: #fff;
-    height: 30px;
-    width: 6%;
-    z-index: -100;
-}
-
-
-
-.team__list__item__content{
-    display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-}
-
-.team__list__item__img{
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-    user-select: none;
-}
-
-.team__list__item__content p{
-    margin: 30px 0;
-    font-size: 16px;
-    font-family: 'Gilroy ExtraBold';
-    color: white;
-    text-align: center;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
-}
-
-.our_work{
-    max-width: 100vw;
-    background-color: #1A2C38;
+    margin: 15px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    border-radius: 40px;
     overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-    position: relative;
+}
+
+.team__list__item::after{
+    content: '';
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    top: -660px;
+}
+
+.team__list__item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 10px white;
+    box-shadow: 0 0 0 10px #C5BAA4;
     z-index: 2;
 }
 
 
 
-.our_work_container{
-    max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding: 0 20px 5% 20px;
+.team__list__item__content{
+    text-align: center;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 40px;
+    border-radius: 20px;
 }
+
+.team__list__item__content h2{
+    font-family: 'Gilroy Light';
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0px rgb(0 0 0 / 30%);
+    color: #AD9C7E;
+    font-style: italic;
+}
+
+.team__list__item__content p{
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: 'Roboto Regular';
+    font-size: 1em;
+    margin-top: 10px;
+    color: grey;
+    color: #AD9C7E;
+}
+
+.our_work{
+    background-color: #1A2C38;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+    position: relative;
+    z-index: 2;
+    padding: 20px 20px 80px 20px;
+}
+
 
 .our_work__header{
     font-size: 72px;
     text-align: center;
     font-family: "Gilroy ExtraBold";
     margin: 0;
-    padding: 6vh 0;
+    padding: 50px 0;
     color: rgb(173, 156, 126);
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+    text-transform: capitalize;
 }
-  
-  .slides{
-    margin: 0.6vw;
-    border-radius: 20px;
-    height: 90vh;
-    flex-grow: 1;
-    width: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    transition: width 0.5s ease-in-out;
-    cursor: pointer;
-  }
-  
-  .slides:hover{
-    box-shadow: 0 0 15px #AD9C7E;
-  }
-  
-  .slides.active{
-    width: 60%;
-  }
-  
-  .slides .slides__content{
-    color: #fff; 
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    opacity: 0;
-    width: 60%;
-    border-radius: 15px;
-    padding: 20px;
-    overflow: hidden;
-  }
 
-  .slides__content div{
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      backdrop-filter: blur(3px);
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 15px;
-  }
-  
-  .slides.active .slides__content{
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
-  }
-  
-  
-  .slides:nth-child(1){
-    background-image: url("../images/wall_in_hall.webp");
-  }
-  
-  .slides:nth-child(2){
-    background-image: url("../images/modern.webp");
-  }
-  
-.slides:nth-child(3){
-    background-image: url("../images/industrial.webp");
-  }
-  
-.slides:nth-child(4){
-    background-image: url("../images/shkaf_kupe.webp");
-  }
-  
-.slides:nth-child(5){
-    background-image: url("../images/white_kitchen.webp");
-  }
-  
-.slides__content h3{
-    font-family: 'Gilroy ExtraBold';
-    font-size: 24px;
+.our_work__list{
+    column-count: 4;
+    list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+
+.our_work__items{
+    margin: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .2s linear;
+}
+
+.our_work__items:first-of-type{
+    margin-top: 0;
+}
+
+.our_work__items:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px rgba(173, 156, 126, 0.9);
+}
+
+.our_work__items img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.zoom__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    transition: 0.3s linear;
+}
+
+.zoom__container.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.zoom__container__helplayer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.zoom__img{
+    max-width: 80vw;
+    max-height: 90vh;
+    z-index: 2;
     position: relative;
 }
-.slides__content p{
+
+.call_to_action_butt{
+    width: 100%;
+    height: 160px;
+    background-color: #1A2C38;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 0 7%;
+}
+
+
+.call_to_action_butt div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.call_to_action_butt p{
+    font-size: 36px;
+    color: #AD9C7E;
+    font-family: 'Roboto Regular';
+    margin: 0;
+}
+
+.call_to_action_butt div button{
+    border: solid 2px #AD9C7E;
+    text-transform: lowercase;
+    font-size: 30px;
+    background-color: transparent;
+    color: #AD9C7E;
     font-family: 'Gilroy Light';
-    font-size: 18px;
-    position: relative;
+    padding: 8px 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 5px rgba(173, 156, 126, 0.25);
+    margin: 0 30px;
+}
+.call_to_action_butt button:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 .contacts_block{
     width: 100%;
     background: rgba(173, 156, 126, 0.9);
     position: relative;
-    margin-top: -50px;
 }
 
 .contacts_block::after{
@@ -1202,9 +1112,19 @@ footer h3{
 	}
 }
 
+@media  (max-width: 1000px){ 
+    .our_work__list{
+        column-count: 3;
+    }
+}
+
+
 
 @media (max-width: 640px){
 
+    .our_work__list{
+        column-count: 2;
+    }
 
     .mobileMenu{
         position: fixed;
@@ -1260,7 +1180,6 @@ footer h3{
     .consultationblock{
         min-width: 0;
         width: 90vw;
-        top: 50%;
         transform: translateY(-50%);
         left: 5%;
         box-shadow: 0 0 50px 20px rgba(173, 156, 126, 0.3);
@@ -1389,6 +1308,7 @@ footer h3{
     .about_us_block h1{
         font-size: 48px;
         text-align: center;
+        padding-bottom: 0;
     }
     
     .about_us__list {
@@ -1396,18 +1316,39 @@ footer h3{
         padding: 10px;
     }
 
+    .number{
+        font-size: 60px;
+    }
+
+    .counter__container span{
+        font-size: 60px;
+    }
+
+    .about_us__list__items img{
+        width: 60px;
+        right: 0;
+    }
+
+    .about_us__list{
+        max-width: 320px;
+    }
+
+    .about_us__list__items{
+        width: auto;
+    }
+
     .text{
-        height: auto;
+        font-size: 24px;
     }
 
     .service_block{
         width: 100%;
-        clip-path: polygon(0 1.5%, 100% 0, 100% 98.5%, 0% 100%);
+        clip-path: polygon(0 1%, 100% 0, 100% 99%, 0% 100%);
         position: relative;
         display: flex;
         justify-content: center;
         z-index: 2;
-        margin-top: -15%;
+        margin-top: -180px;
         padding-bottom: 5%;
     }
     .service_block__container{
@@ -1424,6 +1365,19 @@ footer h3{
         text-align: center;
     }
 
+    .call_to_action_butt{
+        height: auto;
+        padding: 20px;
+    }
+
+    .call_to_action_butt p{
+        font-size: 28px;
+    }
+
+    .call_to_action_butt div button{
+        font-size: 18px;
+        margin-top: 20px;
+    }
     .list_item__content{
         flex-direction: column;
         width: 100%;
@@ -1489,41 +1443,30 @@ footer h3{
         flex: 1;
         width: auto;
         margin: 15px 0;
+        min-height: 400px;
     }
 
-    .team__list__item__img{
-        width: 80%;
-        height: auto;
+    .team__list__item img{
+        width: 180px;
+        height: 180px;
     }
 
     .team__list__item__content p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
-    .team__list__item__note p{
-        font-size: 16px;
-    }
 
-    .team__list__item__note{
-        height: 40px;
-        left: -20px;
+    .team__list__item::after{
+        top: -670px;
     }
-
-    .team__list__item__note::before{
-        height: 25px;
-    }
-
-    .team__list__item__note::before{
-        height: 25px;
-        width: 18px;
-    }
-
     .our_work{
-        clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 99%, 0% 100%);
+        padding-bottom: 40px;
     }
 
     .our_work__header{
         font-size: 52px;
+        padding: 30px 0;
     }
 
     .our_work_container{
@@ -1618,18 +1561,12 @@ footer h3{
     }
 }
 
-
 @media  (max-width: 375px){ 
     
     .mobileMenu_list a{
         font-size: 18px;
     }
 
-    .consultationblock{
-        bottom: 0;
-        top: auto;
-        transform: none;
-    }
     .consultationblock__form label{
         font-size: 20px;
     }

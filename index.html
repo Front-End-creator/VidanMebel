@@ -21,15 +21,14 @@
     <title>VidanMebel</title>
 </head>
 <body>
-    <div class="fixed_background"></div>
     <header>
         <ul class="navbar">
             <li class = "navbar__item"><a href = "#home"><img src = "images/Vidan_logo_new.webp"></a>
-            <li class = "navbar__item"><a href = "#about">Про нас</a></li>
-            <li class = "navbar__item"><a href = "#service">Как мы работаем</a></li>
+            <li class = "navbar__item"><a class = "lang" href = "#about" name = "menu__about">Про нас</a></li>
+            <li class = "navbar__item"><a class = "lang" href = "#service" name = "menu__service">Як ми працюємо</a></li>
             <li class = "navbar__item"><a href = "#team">Команда</a></li>
-            <li class = "navbar__item"><a href = "#work">Работы</a></li>
-            <li class = "navbar__item"><button class = "consultation_button">Консультация</button></li>
+            <li class = "navbar__item"><a class = "lang" href = "#work" name = "menu__work">Роботи</a></li>
+            <li class = "navbar__item"><button class = "lang__button" id = "ua">UA</button><button class = "lang__button" id = "ru">RU</button></li>
             <li class = "navbar__background"></li>
         </ul>
         <div class = "toggle active">
@@ -48,13 +47,13 @@
                 <li class = "mobileMenu_list">
                     <a href = "#about">
                         <span class = "mob_icon"><ion-icon name="people-outline"></ion-icon></span>
-                        <span class = "mob_menu_text">Про нас</span>
+                        <span class = "mob_menu_text lang" name = "menu__about">Про нас</span>
                     </a>
                 </li>
                 <li class = "mobileMenu_list">
                     <a href = "#service">
                         <span class = "mob_icon"><ion-icon name="build-outline"></ion-icon></span>
-                        <span class = "mob_menu_text">Как мы работаем</span>
+                        <span class = "mob_menu_text lang"  name = "menu__service">Как мы работаем</span>
                     </a>
                 </li>
                 <li class = "mobileMenu_list">
@@ -66,13 +65,13 @@
                 <li class = "mobileMenu_list">
                     <a href = "#work">
                         <span class = "mob_icon"><ion-icon name="construct-outline"></ion-icon></span>
-                        <span class = "mob_menu_text">Работы</span>
+                        <span class = "mob_menu_text lang" name = "menu__work">Работы</span>
                     </a>
                 </li>
                 <li class = "mobileMenu_list">
                     <a href = "#">
                         <span class = "mob_icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                        <span class = "mob_menu_text consultation_button">Консультация</span>
+                        <span class = "mob_menu_text lang consultation_button" name = "menu__consultation">Консультация</span>
                     </a>
                 </li>
             </ul>
@@ -80,7 +79,7 @@
     </header>
         <div class = "backlayer" style="display: none;">
             <div class = "leadblock">
-            <iframe src="https://b-shkaf.online/?fbclid=PAAaaAatOMEoVkhLJAlTQPl-z05kmChfj6XNOL0qnxWxbFln3JxEWskzw0cxE" width="100%" height="100%" style="border-style:  none;"></iframe>
+            <iframe src="https://kitchen-kiev.store" width="100%" height="100%" style="border-style:  none;"></iframe>
         </div>
         <div class = "helperlayer"></div>
       </div>
@@ -119,10 +118,10 @@
             <img class = "logo__img" src = "images/Vidan_logo_new.webp">
         </div>
         <div class = "call_to_action">
-            <p>Заполни форму за 30 секунд и получи полную консультацию по своему вопросу</p>
+            <p class = "lang" name = "call_to_action__text">Заповни форму за 30 секунд та отримай повну консультацію з свого питання</p>
             <div class = "call_to_action__buttons">
-                <button class = "lead">заказать</button>
-                <a href = "#about"><button>узнать больше</button></a>
+                <button class = "consultation_button lang" name = "butt__call">Зворотній зв'язок</button>
+                <a href = "#work"><button class = "lang" name = "butt__ourwork">наші роботи</button></a>
             </div>
             <div class = "call_to_action__social">
                 <a href = "https://www.instagram.com/vidanmebel/"><img src = "images/instagram-icon.webp"></a>
@@ -131,112 +130,112 @@
             </div>
         </div>
     </div>
+    <div id = "work" class = "our_work">
+        <h1 class = "our_work__header lang" name = "butt__ourwork">Наші Роботи</h1>
+        <ul class="our_work__list">
+            <li class="our_work__items"><img src="images/kitchen_1.WEBP" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_2.WEBP" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_3.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_4.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_5.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_6.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_7.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_8.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_9.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_10.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_11.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_12.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_13.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_14.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_15.JPG" alt=""></li>
+            <li class="our_work__items"><img src="images/kitchen_16.JPG" alt=""></li>
+        </ul>
+    </div>
+    <div class = "zoom__container">
+        <div class = "zoom__container__helplayer"></div>
+        <img class = "zoom__img" src="images/dizainerskii-shkaf.webp" alt="">
+    </div>
     <div id = "about" class = "about_us_block">
-        <h1>Почему выбирают нас</h1>
+        <h1 class = "lang" name = "why_choose">Чому обирають нас</h1>
         <ul class = "about_us__list">
             <li class="about_us__list__items">
-                <div class = "counter">
+                <img src="images/experience.png" alt="exp">
                     <div data-num="10" class="number">0</div>
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="45" cy="75" r="70" transform="rotate(-90 60 60)"></circle>
-                    </svg>
-                </div>
-                <p class = "text">лет опыта в сфере мебели</p>
+                    <p class = "text lang" name = "counter__age">років досвіду у сфері меблів</p>
             </li>
             <li class="about_us__list__items">
-                <div class = "counter">
+                <img src="images/cupboard.png" alt="cupboard">
                     <div data-num="2390" class="number f-s44">0</div>
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="45" cy="75" r="70" transform="rotate(-90 60 60)"></circle>
-                    </svg>
-                </div>
-                <p class = "text">шкафов спроектировано и успешно установлено</p>
+                <p class = "text lang" name = "counter__cupboard">шаф спроектовано та успішно встановлено</p>
             </li>
-            <li class="about_us__list__items">
-                <div class = "counter">
+            <li class="about_us__list__items"> 
+                <img src="images/client.png" alt="client">
                     <div data-num="277" class="number f-s54">0</div>
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="45" cy="75" r="70" transform="rotate(-90 60 60)"></circle>
-                    </svg>
-                </div>
-                <p class = "text">клиентов в 2021 году</p>
+                <p class = "text lang" name = "counter__client">задоволених клієнтів у 2021 році</p>
             </li>
             <li class="about_us__list__items">
-                <div class = "counter">
-                    <div class = "counter__container">
+                <img src="images/clock.png" alt="clock">
+                <div class = "counter__container">
                         <div data-num="24" class="number">0</div>
                         <span>/</span>
                         <div data-num="7" class="number">0</div>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="45" cy="75" r="70" transform="rotate(-90 60 60)"></circle>
-                    </svg>
-                </div>
-                <p class = "text">круглосуточная поддержка</p>
+                <p class = "text lang" name = "counter__help">цілодобова підтримка</p>
             </li>
             <li class="about_us__list__items">
-                <div class = "counter">
+                    <img src="images/guarantee.png" alt="guarantee">
                     <div data-num="12" class="number">0</div>
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="45" cy="75" r="70" transform="rotate(-90 60 60)"></circle>
-                    </svg>
-                </div>
-                <p class = "text">месяцев гарантии</p>
+                <p class = "text lang" name = "counter__month">місяців гарантії</p>
             </li>
             <li class="about_us__list__items">
-                <div class = "counter">
                     <div data-num="12" class="number">0</div>
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="45" cy="75" r="70" transform="rotate(-90 60 60)"></circle>
-                    </svg>
-                </div>
                 <p class = "text">месяцев гарантии</p>
             </li>
         </ul>
     </div>
     <div id = "service" class = "service_block">
         <div class="service_block__container">
-            <h1>Как мы работаем</h1>
+            <h1 class = "lang" name = "menu__service">Как мы работаем</h1>
             <ul class="service_block__list">
                 <li class = "list_item">
                     <div class = "list_item__content">
                         <img src = "images/calling.webp">
-                        <p class = "flex-end">Клиент выходит с нами на связь, через сайт или по телефону</p>
+                        <p class = "lang" name = "service__client" class = "flex-end">Зацікавлений клієнт виходить з нами на зв'язок, через сайт або по телефону</p>
                     </div>
                     <span></span>
                 </li>
                 <li class = "list_item reverse">
                     <div class = "list_item__content reverse">
                         <img src = "images/calculating.webp">
-                        <p>Наша команда определяет задачи и объем работ, составляет предварительный расчет стоимости</p>
+                        <p class = "lang" name = "service__calculate">Наша команда визначає задачі та обсяг робіт, складаємо попередній розрахунок вартості</p>
                     </div>
                     <span class = "way_reverse"></span>
                 </li>
                 <li class = "list_item">
                     <div class = "list_item__content">
                         <img src = "images/tape_measure.webp">
-                        <p>Наша команда специалистов выезжает на замер, и просчитывает окончательную стоимость услуги</p>
+                        <p class = "lang" name = "service__team">Наш майстер виїжджає на заміри, затверджує технічний проект та прораховує остаточну вартість замовлення</p>
                     </div>
                     <span></span>
                 </li>
                 <li class = "list_item reverse">
                     <div class = "list_item__content reverse">
                         <img src = "images/contract.webp">
-                        <p>Заключаем договор с клиентом, и указываем сумму предоплаты</p>
+                        <p class = "lang" name = "service__treaty">Укладаємо офіційний двосторонній договір, в якому зазначаємо технічне завдання та умови співпраці</p>
                     </div>
                     <span class = "way_reverse"></span>
                 </li>
                 <li class = "list_item">
                     <div class = "list_item__content">
                         <img src = "images/work.webp">
-                        <p>Изготовление и монтаж</p>
+                        <p class = "lang" name = "service__manufacturing">Виготовлення, доставка та монтаж</p>
                     </div>
                     <span></span>
                 </li>
                 <li class = "list_item reverse">
                     <div class = "list_item__content reverse">
                         <img src = "images/end-point.webp">
-                        <p>Приём работ, окончательная оплата</p>
+                        <p class = "lang" name = "service__payment">Прийом робіт, остаточна оплата</p>
                     </div>
                 </li>
             </ul>
@@ -246,114 +245,82 @@
         <h1 class = "team__header">Наша команда</h1>
         <ul class = "team__list">
             <li class = "team__list__item">
-                <div class = "team__list__item__note"><p>Богдан</p></div>
+                <img src="images/Bogdan.jpg" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/Bogdan.webp">
-                    <p>Руководитель и идейный вдохновитель компании</p>
+                    <h2>Богдан</h2>
+                    <p class = "lang" name = "team__supervisor">Керівник та ідейний натхненник компанії</p>
                 </div>
             </li>
             <li class = "team__list__item">
-                <div class = "team__list__item__note second"><p>Орест</p></div>
-                    <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/Orest.webp">
-                    <p>Конструктор-проектировщик</p>
+                <img src="images/Orest.webp" alt="Bogdan">
+                <div class = "team__list__item__content">
+                    <h2>Орест</h2>
+                    <p class = "lang" name = "team__constructor">Головний конструктор та проектувальник</p>  
             </div>
             </li>
             <li class = "team__list__item">
-                <div class = "team__list__item__note third"><p>Оксана</p></div>
+                <img src="images/Oksana.webp" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/Oksana.webp">
-                    <p>Старший менеджер по продажам</p>
+                    <h2>Оксана</h2>
+                    <p class = "lang" name = "team__topmanager">Старший менеджер з продажу</p> 
             </div>
             </li>
             <li class = "team__list__item">
-                <div class = "team__list__item__note third"><p>Анна</p></div>
+                <img src="images/Anna.webp" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/Anna.webp">
-                    <p>Специалист по кухням</p>
+                    <h2 class = "lang" name = "name__anna">Ганна</h2>
+                    <p class = "lang" name = "team__spec">Фахівець з кухень</p>   
             </div>
             </li>
             <li class = "team__list__item">
-                <div class = "team__list__item__note third"><p>Наталья</p></div>
+                <img src="images/natalia.webp" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/natalia.webp">
-                    <p>Менеджер по продажам</p>
+                    <h2 class = "lang" name = "name__natalia">Наталя</h2>
+                    <p class = "lang" name = "team__manager">Менеджер з продажу</p>    
             </div>
             </li>
             <li class = "team__list__item">
-                <div class = "team__list__item__note third"><p>Кирилл</p></div>
+                <img src="images/Kirill.webp" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/Kirill.webp">
-                    <p>Менеджер по продажам</p>
+                    <h2 class = "lang" name = "name__kirill">Кирил</h2>
+                    <p class = "lang" name = "team__manager">Менеджер з продажу</p>   
             </div>
             </li>
             <li class = "team__list__item">
-                <div class = "team__list__item__note third"><p>Ирина</p></div>
+                <img src="images/Irina.webp" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <img class = "team__list__item__img" src = "images/Irina.webp">
-                    <p>Менеджер по продажам</p>
+                    <h2 class = "lang" name = "name__irina">Ірина</h2>
+                    <p class = "lang" name = "team__manager">Менеджер з продажу</p>   
             </div>
             </li>
         </ul>
     </div>
-    <div class = "our_work">
-        <h1 id = "work" class = "our_work__header">Наши рaботы</h1>
-        <div class="our_work_container">
-            <div class="slides">
-                <div class="slides__content">
-                    <div></div>
-                    <h3>Стенка в прихожую.</h3>
-                    <p>Фасады шкафа выполнены из крашеного, глянцевого МДФ. Место для сидения обшито тканью велюр.</p>
-                </div>
-            </div>
-            <div class="slides">
-                <div class="slides__content">
-                    <div></div>
-                    <h3>Кухня Модерн.</h3>
-                    <p>Кухни в стиле модерн имеют особое очарование, они не только красивы и удобны, но и функциональны.</p>
-                </div>
-            </div>
-            <div class="slides active">
-                <div class="slides__content">
-                    <div></div>
-                    <h3>Кухня Индастриал.</h3>
-                    <p>Двух-уровневая кухня под потолок,  максимально задействует пространство, что позволяет разместить большое количество посуды и других вещей.</p>
-                </div>
-            </div>
-            <div class="slides">
-                <div class="slides__content">
-                    <div></div>
-                    <h3>Шкаф-купе.</h3>
-                    <p>Отдельно стоящий шкаф с раздвижными дверями, дарит комфорт и удобство в использовании.</p>
-                </div>
-            </div>  
-            <div class="slides">
-                <div class="slides__content">
-                    <div></div>
-                    <h3>Белая кухня.</h3>
-                    <p>Кухня с белыми МДФ фасадами в сочетании с деревом создает уютную и домашнюю атмосферу.</p>
-                </div>
-            </div>
-        </div>
+    <div class="call_to_action_butt">
+        <p class = "lang" name = "call_to_action__p">Пройди тест та дізнайся вартість меблів за одну хвилину!</p>
+        <div class="call_to_action__conteiner">
+            <button onclick="location.href='https://kitchen-kiev.store'" class = "lang" name = "call_to_action__butt__kitchen">Вартість кухні</button>
+            <button onclick="location.href='https://kitchen-kiev.store/shafa'" class = "lang" name = "call_to_action__butt__cupboard">Вартість шафи</button>
+            <button class = "lang consultation_button" name = "butt__call">Зворотній зв‘язок</button>
+        </div> 
     </div>
     <div class = "contacts_block">
-        <h1 class = "contacts__header">Контакты</h1>
+        <h1 class = "contacts__header lang" name = "contacts">Контакти</h1>
         <div class="contacts">
         <div class="contacts__item">
             <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.7340676342014!2d30.502518015732576!3d50.48329427947987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfe9195dc349%3A0x65c203a9857b6356!2z0JLQuNC00LDQvSDQnNC10LHQtdC70Yw!5e0!3m2!1suk!2sua!4v1635498587084!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="contacts__item">
-            <h3>Как нас найти</h3>
+            <h3 class = "lang" name = "howfind">Як нас знайти</h3>
             <div class = "contacts__data">
                 <img class = "icon" src = "images/phone.webp">
-                <p>+38 (066)-592-01-28</p>
-                <p>+38 (063)-940-55-57</p>
-                <p>+38 (097)-607-58-58</p>
+                <p>+38 (050)-533-12-68</p>
+                <p>+38 (097)-943-58-77</p>
+                <p>+38 (050)-842-85-05</p>
                 <img class = "icon" src = "images/email.webp">
                 <p>vidanmebel@gmail.com</p>
             </div>
             <div class="contacts__social">
-                <h3>Мы в соц. сетях</h3>
+                <h3>Мы в соц. мережах</h3>
                 <div class="social__icons">
                     <a href = "https://www.instagram.com/vidanmebel/"><img src = "images/instagram-icon__white.webp"></a>
                     <a href = "https://www.youtube.com/channel/UC6qzgmgu-gb7ns1zSZolgbA"><img src = "images/youtube-icon__white.webp"></a>
@@ -364,7 +331,7 @@
     </div>
     <footer>
         <hr>
-        <h3>© 2021 Vidan Mebel. All Rights Reserved.</h3>
+        <h3>© 2021-2022 Vidan Mebel. All Rights Reserved.</h3>
     </footer>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
