@@ -1239,16 +1239,18 @@ footer h3{
     .mobileMenu_list__button{
         display: flex;
         justify-content: end;
-        padding: 10px 20px;
+        padding: 0 10px;
     }
 
     .mobileMenu_list__button button{
         color: #AD9C7E;
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-family: 'Gilroy Light';
         background-color: transparent;
         border: none;
+        padding: 0;
+        margin-right: 10px;
     }
     
     .mob_icon{
