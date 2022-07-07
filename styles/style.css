@@ -741,6 +741,11 @@ body.hidden{
     font-family: 'Gilroy ExtraBold';
 }
 
+.contacts__data p{
+    text-decoration: none;
+}
+
+
 .contacts__data p:nth-child(3), .contacts__data p:nth-child(4){
     margin-left: 55px;
 }
@@ -1230,6 +1235,21 @@ footer h3{
     .mobileMenu_list{
         margin: 0;
     }
+
+    .mobileMenu_list__button{
+        display: flex;
+        justify-content: end;
+        padding: 10px 20px;
+    }
+
+    .mobileMenu_list__button button{
+        color: #AD9C7E;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-family: 'Gilroy Light';
+        background-color: transparent;
+        border: none;
+    }
     
     .mob_icon{
         padding-right: 20px;
@@ -1377,6 +1397,7 @@ footer h3{
     .call_to_action_butt div button{
         font-size: 18px;
         margin-top: 20px;
+        min-width: 200px
     }
     .list_item__content{
         flex-direction: column;

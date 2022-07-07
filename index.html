@@ -23,12 +23,12 @@
 <body>
     <header>
         <ul class="navbar">
-            <li class = "navbar__item"><a href = "#home"><img src = "images/Vidan_logo_new.webp"></a>
+            <li class = "navbar__item"><a href = "#home"><img src = "images/Vidan_logo.webp"></a>
             <li class = "navbar__item"><a class = "lang" href = "#about" name = "menu__about">Про нас</a></li>
             <li class = "navbar__item"><a class = "lang" href = "#service" name = "menu__service">Як ми працюємо</a></li>
             <li class = "navbar__item"><a href = "#team">Команда</a></li>
             <li class = "navbar__item"><a class = "lang" href = "#work" name = "menu__work">Роботи</a></li>
-            <li class = "navbar__item"><button class = "lang__button" id = "ua">UA</button><button class = "lang__button" id = "ru">RU</button></li>
+            <li class = "navbar__item"><button class = "lang__button" id = "ua">UA</button><button class = "lang__button" id = "ru">ru</button></li>
             <li class = "navbar__background"></li>
         </ul>
         <div class = "toggle active">
@@ -41,7 +41,7 @@
                     <a href = "#home">
                         <span class = "mob_icon"><ion-icon name="home-outline"></ion-icon>
                         </span>
-                        <span class = "mob_menu_text">Главная</span>
+                        <span class = "mob_menu_text">Головна</span>
                     </a>
                 </li>
                 <li class = "mobileMenu_list">
@@ -53,7 +53,7 @@
                 <li class = "mobileMenu_list">
                     <a href = "#service">
                         <span class = "mob_icon"><ion-icon name="build-outline"></ion-icon></span>
-                        <span class = "mob_menu_text lang"  name = "menu__service">Как мы работаем</span>
+                        <span class = "mob_menu_text lang"  name = "menu__service">Як ми працюємо</span>
                     </a>
                 </li>
                 <li class = "mobileMenu_list">
@@ -65,14 +65,17 @@
                 <li class = "mobileMenu_list">
                     <a href = "#work">
                         <span class = "mob_icon"><ion-icon name="construct-outline"></ion-icon></span>
-                        <span class = "mob_menu_text lang" name = "menu__work">Работы</span>
+                        <span class = "mob_menu_text lang" name = "menu__work">Роботи</span>
                     </a>
                 </li>
                 <li class = "mobileMenu_list">
                     <a href = "#">
                         <span class = "mob_icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                        <span class = "mob_menu_text lang consultation_button" name = "menu__consultation">Консультация</span>
+                        <span class = "mob_menu_text lang consultation_button" name = "menu__consultation">Консультація</span>
                     </a>
+                </li>
+                <li class = "mobileMenu_list__button">
+                    <button class = "lang__button" id = "ua">UA</button><button class = "lang__button" id = "ru">ru</button>
                 </li>
             </ul>
         </div>
@@ -115,7 +118,7 @@
     </div>
     <div id = "home" class = "container">
         <div class = "logo">
-            <img class = "logo__img" src = "images/Vidan_logo_new.webp">
+            <img class = "logo__img" src = "images/Vidan_logo.webp">
         </div>
         <div class = "call_to_action">
             <p class = "lang" name = "call_to_action__text">Заповни форму за 30 секунд та отримай повну консультацію з свого питання</p>
@@ -124,9 +127,9 @@
                 <a href = "#work"><button class = "lang" name = "butt__ourwork">наші роботи</button></a>
             </div>
             <div class = "call_to_action__social">
-                <a href = "https://www.instagram.com/vidanmebel/"><img src = "images/instagram-icon.webp"></a>
+                <a href = "https://instagram.com/vidanmebli?igshid=YmMyMTA2M2Y="><img src = "images/instagram-icon.webp"></a>
                 <a href = "https://www.youtube.com/channel/UC6qzgmgu-gb7ns1zSZolgbA"><img src = "images/youtube-icon.webp"></a>
-                <a href = "https://www.facebook.com/groups/vidanmebel/"><img src = "images/facebook-icon.webp"></a>
+                <a href = "https://www.facebook.com/vidanmebli"><img src = "images/facebook-icon.webp"></a>
             </div>
         </div>
     </div>
@@ -195,7 +198,7 @@
     </div>
     <div id = "service" class = "service_block">
         <div class="service_block__container">
-            <h1 class = "lang" name = "menu__service">Как мы работаем</h1>
+            <h1 class = "lang" name = "menu__service">Як ми працюємо</h1>
             <ul class="service_block__list">
                 <li class = "list_item">
                     <div class = "list_item__content">
@@ -268,14 +271,14 @@
             <li class = "team__list__item">
                 <img src="images/Anna.webp" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <h2 class = "lang" name = "name__anna">Ганна</h2>
+                    <h2 class = "lang" name = "name__anna">Анна</h2>
                     <p class = "lang" name = "team__spec">Фахівець з кухень</p>   
             </div>
             </li>
             <li class = "team__list__item">
                 <img src="images/natalia.webp" alt="Bogdan">
                 <div class = "team__list__item__content">
-                    <h2 class = "lang" name = "name__natalia">Наталя</h2>
+                    <h2 class = "lang" name = "name__natalia">Наталія</h2>
                     <p class = "lang" name = "team__manager">Менеджер з продажу</p>    
             </div>
             </li>
@@ -315,16 +318,15 @@
                 <img class = "icon" src = "images/phone.webp">
                 <p>+38 (050)-533-12-68</p>
                 <p>+38 (097)-943-58-77</p>
-                <p>+38 (050)-842-85-05</p>
                 <img class = "icon" src = "images/email.webp">
                 <p>vidanmebel@gmail.com</p>
             </div>
             <div class="contacts__social">
                 <h3>Мы в соц. мережах</h3>
                 <div class="social__icons">
-                    <a href = "https://www.instagram.com/vidanmebel/"><img src = "images/instagram-icon__white.webp"></a>
+                    <a href = "https://instagram.com/vidanmebli?igshid=YmMyMTA2M2Y="><img src = "images/instagram-icon__white.webp"></a>
                     <a href = "https://www.youtube.com/channel/UC6qzgmgu-gb7ns1zSZolgbA"><img src = "images/youtube-icon__white.webp"></a>
-                    <a href = "https://www.facebook.com/groups/vidanmebel/"><img src = "images/facebook-icon__white.webp"></a>
+                    <a href = "https://www.facebook.com/vidanmebli"><img src = "images/facebook-icon__white.webp"></a>
                 </div>
             </div>
         </div>
