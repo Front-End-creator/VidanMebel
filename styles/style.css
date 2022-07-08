@@ -110,7 +110,6 @@ body.hidden{
 .navbar__item button{
     color: #AD9C7E;
     font-family: "Gilroy Light";
-    text-transform: capitalize;
     font-size: 20px;
     border: solid 1px #AD9C7E;
     background: none;
