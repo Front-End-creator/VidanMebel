@@ -50,9 +50,10 @@
         <ul class="navbar">
             <li class = "navbar__item"><a href = "#home"><img src = "images/Vidan_logo.png"></a>
             <li class = "navbar__item"><a class = "lang" href = "#about" name = "menu__about">Про нас</a></li>
-            <li class = "navbar__item"><a class = "lang" href = "#service" name = "menu__service">Як ми працюємо</a></li>
+            <li class = "navbar__item"><a class = "lang" href = "#response" name = "menu__response">Відгуки</a></li>
             <li class = "navbar__item"><a href = "#team">Команда</a></li>
             <li class = "navbar__item"><a class = "lang" href = "#work" name = "menu__work">Роботи</a></li>
+            <li class = "navbar__item"><a class = "lang" href = "#contacts" name = "menu__contacts">Контакти</a></li>
             <li class = "navbar__item"><button class = "lang__button" id = "ua">UA</button><button class = "lang__button" id = "ru">ru</button></li>
             <li class = "navbar__background"></li>
         </ul>
@@ -78,7 +79,7 @@
                 <li class = "mobileMenu_list">
                     <a href = "#service">
                         <span class = "mob_icon"><ion-icon name="build-outline"></ion-icon></span>
-                        <span class = "mob_menu_text lang"  name = "menu__service">Як ми працюємо</span>
+                        <span class = "mob_menu_text lang"  name = "menu__response">Відгуки</span>
                     </a>
                 </li>
                 <li class = "mobileMenu_list">
@@ -105,6 +106,11 @@
             </ul>
         </div>
     </header>
+    <div class = "tel__button">
+        <a href = "tel:+380505331268">
+            <img src="images/phone.png" alt="">
+        </a>
+    </div>
         <div class = "backlayer" style="display: none;">
             <div class = "leadblock">
             <iframe src="https://kitchen-kiev.store" width="100%" height="100%" style="border-style:  none;"></iframe>
@@ -212,7 +218,7 @@
             </li>
             <li class="about_us__list__items">
                     <img src="images/guarantee.png" alt="guarantee">
-                    <div data-num="12" class="number">0</div>
+                    <div data-num="60" class="number">0</div>
                 <p class = "text lang" name = "counter__month">місяців гарантії</p>
             </li>
             <li class="about_us__list__items">
@@ -221,54 +227,26 @@
             </li>
         </ul>
     </div>
-    <div id = "service" class = "service_block">
-        <div class="service_block__container">
-            <h1 class = "lang" name = "menu__service">Як ми працюємо</h1>
-            <ul class="service_block__list">
-                <li class = "list_item">
-                    <div class = "list_item__content">
-                        <img src = "images/calling.webp">
-                        <p class = "lang" name = "service__client" class = "flex-end">Зацікавлений клієнт виходить з нами на зв'язок, через сайт або по телефону</p>
-                    </div>
-                    <span></span>
-                </li>
-                <li class = "list_item reverse">
-                    <div class = "list_item__content reverse">
-                        <img src = "images/calculating.webp">
-                        <p class = "lang" name = "service__calculate">Наша команда визначає задачі та обсяг робіт, складаємо попередній розрахунок вартості</p>
-                    </div>
-                    <span class = "way_reverse"></span>
-                </li>
-                <li class = "list_item">
-                    <div class = "list_item__content">
-                        <img src = "images/tape_measure.webp">
-                        <p class = "lang" name = "service__team">Наш майстер виїжджає на заміри, затверджує технічний проект та прораховує остаточну вартість замовлення</p>
-                    </div>
-                    <span></span>
-                </li>
-                <li class = "list_item reverse">
-                    <div class = "list_item__content reverse">
-                        <img src = "images/contract.webp">
-                        <p class = "lang" name = "service__treaty">Укладаємо офіційний двосторонній договір, в якому зазначаємо технічне завдання та умови співпраці</p>
-                    </div>
-                    <span class = "way_reverse"></span>
-                </li>
-                <li class = "list_item">
-                    <div class = "list_item__content">
-                        <img src = "images/work.webp">
-                        <p class = "lang" name = "service__manufacturing">Виготовлення, доставка та монтаж</p>
-                    </div>
-                    <span></span>
-                </li>
-                <li class = "list_item reverse">
-                    <div class = "list_item__content reverse">
-                        <img src = "images/end-point.webp">
-                        <p class = "lang" name = "service__payment">Прийом робіт, остаточна оплата</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+   
+    <div id = "response" class = "response">
+        <h1 class="response__header">Відгуки про нас</h1>
+        <ul class="response-list">
+            <li class="response-list__item">
+                <img src="images/response_2.png" alt="">
+            </li>
+            <li class="response-list__item">
+                <img class = "mtb-80" src="images/response_3.png" alt="">
+            </li>
+            <li class="response-list__item">
+                <img class = "mtb-80" src="images/response_1.png" alt="">
+            </li>
+            <li class="response-list__item">
+                <img class = "mtb-80" src="images/response_4.png" alt="">
+            </li>
+        </ul>
     </div>
+
+
     <div id = "team" class="team">
         <h1 class = "team__header">Наша команда</h1>
         <ul class = "team__list">
@@ -326,12 +304,11 @@
     <div class="call_to_action_butt">
         <p class = "lang" name = "call_to_action__p">Пройди тест та дізнайся вартість меблів за одну хвилину!</p>
         <div class="call_to_action__conteiner">
-            <button onclick="location.href='https://kitchen-kiev.store'" class = "lang" name = "call_to_action__butt__kitchen">Вартість кухні</button>
-            <button onclick="location.href='https://kitchen-kiev.store/shafa'" class = "lang" name = "call_to_action__butt__cupboard">Вартість шафи</button>
+            <button onclick="location.href='https://vidanmebel.site'" class = "lang" name = "call_to_action__butt__kitchen">Вартість кухні</button>
             <button class = "lang consultation_button" name = "butt__call">Зворотній зв‘язок</button>
         </div> 
     </div>
-    <div class = "contacts_block">
+    <div id = "contacts" class = "contacts_block">
         <h1 class = "contacts__header lang" name = "contacts">Контакти</h1>
         <div class="contacts">
         <div class="contacts__item">
@@ -341,8 +318,10 @@
             <h3 class = "lang" name = "howfind">Як нас знайти</h3>
             <div class = "contacts__data">
                 <img class = "icon" src = "images/phone.webp">
-                <p>+38 (050)-533-12-68</p>
-                <p>+38 (097)-943-58-77</p>
+                <div>
+                    <a href = "tel:+380505331268">+38 (050)-533-12-68</a>
+                    <a class = "ml-55" href = "tel:+380979435877">+38 (097)-943-58-77</a>
+                </div>
                 <img class = "icon" src = "images/email.webp">
                 <p>vidanmebel@gmail.com</p>
             </div>
