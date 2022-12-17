@@ -642,7 +642,8 @@ body.hidden{
 
 .contacts__data{
     align-self: flex-start;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-top: 100px;
 }
 
 .contacts__item p, .contacts__data a{
@@ -677,6 +678,10 @@ body.hidden{
     float: left;
     margin-right: 20px;
     transform: translateY(2px);
+}
+
+.test{
+    filter: drop-shadow(0 50px 0 #AD9C7E);
 }
 
 .contacts__social{
@@ -1097,6 +1102,12 @@ footer h3{
     }
   }
 
+@media  (max-width: 1440px){ 
+    .about_us__list{
+        justify-content: center;
+    }
+}
+
 @media  (max-width: 1000px){ 
     .our_work__list{
         column-count: 3;
@@ -1385,7 +1396,7 @@ footer h3{
     }
 
     .about_us__list__items{
-        width: auto;
+        width: 100%;
     }
 
     .text{
@@ -1595,7 +1606,7 @@ footer h3{
     }
 
     .contacts__data{
-        margin: 40px 20px;
+        margin: 40px 40px;
     }
 
     .contacts__item p, .contacts__item a{
