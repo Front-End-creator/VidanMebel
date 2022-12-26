@@ -56,8 +56,8 @@ body.hidden{
     top: 0;
 }
 
-.navbar__item{
-    margin: 20px;
+.navbar__item {
+    margin: 20px 15px;
 }
 
 .navbar__item:nth-child(1){
@@ -118,7 +118,6 @@ body.hidden{
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
-    margin-right: 20px;
 }
 
 
